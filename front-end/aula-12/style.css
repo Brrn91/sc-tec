@@ -6,7 +6,8 @@ body {
 .imagem-flutuante {
   float: left;
   width: 200px;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .subtitulo {
