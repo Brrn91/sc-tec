@@ -1,0 +1,14 @@
+.header {
+  background-color: rgb(188, 186, 186);
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: rgb(92, 91, 91);
+  padding: 20px;
+}
+
+.content {
+  background-color: #ffffff;
+  padding: 20px;
+}
