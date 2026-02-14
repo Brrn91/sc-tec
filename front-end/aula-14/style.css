@@ -1,0 +1,25 @@
+.container {
+  background-color: rgb(189, 124, 249);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  display: flex;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+#box1 {
+  background-color: rgb(76, 43, 226);
+}
+
+#box2 {
+  background-color: rgb(226, 43, 208);
+}
+
+#box3 {
+  background-color: rgb(43, 226, 107);
+}
