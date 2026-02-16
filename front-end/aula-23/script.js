@@ -45,6 +45,9 @@ criaSecao('Loop While For', dados);
 
 dados = '';
 for (let carro of carros) {
+  if(carro === 'Celta') {
+    continue;
+  }
   dados += '<p>' + carro + '</p>';
 }
 criaSecao('Loop While For Of', dados);
