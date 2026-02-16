@@ -14,3 +14,8 @@ console.log(listaDeCompras);
 
 listaDeCompras.push('Maçã');
 console.log(listaDeCompras);
+
+const convidados = ['Cosma', 'Leo', 'Armando'];
+convidados.push('Lucas');
+console.log(convidados.length);
+console.log(convidados[convidados.length -1]); //Acessando o último elemento da array. O índice do último elemento é igual ao tamanho da array -1.
