@@ -48,3 +48,5 @@ for(let carro of carros) {
   dados += '<p>' + carro + '</p>';
 };
 criaSecao('Loop While For Of', dados);
+
+let carro1 = [marca: 'Ford', modelo: 'Ka', ano: '2015'];
