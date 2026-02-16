@@ -42,3 +42,9 @@ for (i = 0; i < carros.length; i++) {
   dados += '<p>' + carros[i] + '</p>';
 };
 criaSecao('Loop While For', dados);
+
+dados = '';
+for(let carro of carros) {
+  dados += '<p>' + carro + '</p>';
+};
+criaSecao('Loop While For Of', dados);
