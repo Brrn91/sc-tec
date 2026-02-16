@@ -1,11 +1,13 @@
 function verificarAprovacao() {
-  let nota = document.getElementById("nota").value;
+  let nota = document.getElementById('nota').value;
 
-  if (nota => 7) {
-    document.
+  if (nota >= 7) {
+    document.getElementById('resultado').innerHTML = 'Aluno(a) aprovado(a)!';
+    alert('Aluno(a) aprovado(a)!');
   } else {
-    document.
+    document.getElementById('resultado').innerHTML = 'Aluno(a) reprovado(a)!';
+    alert('Aluno(a) reprovado(a)!');
   }
 
-  console.log(nota);
+  console.log("Nota inserida: ", nota);
 }
