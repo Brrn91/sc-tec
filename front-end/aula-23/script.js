@@ -40,19 +40,29 @@ criaSecao('Loop While Invertido', dados);
 dados = '';
 for (i = 0; i < carros.length; i++) {
   dados += '<p>' + carros[i] + '</p>';
-};
+}
 criaSecao('Loop While For', dados);
 
 dados = '';
-for(let carro of carros) {
+for (let carro of carros) {
   dados += '<p>' + carro + '</p>';
-};
+}
 criaSecao('Loop While For Of', dados);
 
-let carro1 = {marca: 'Ford', modelo: 'Ka', ano: '2015'};
-let carro2 = {marca: 'Fiat', modelo: 'Uno', ano: '2000'};
+let carro1 = { marca: 'Ford', modelo: 'Ka', ano: '2015' };
+let carro2 = { marca: 'Fiat', modelo: 'Uno', ano: '2000' };
 
 let carros2 = [];
 carros2.push(carro1);
 carros2.push(carro2);
-console.log(carros2);
+
+dados = '';
+for (let carro of carros2) {
+  let propriedades = '';
+
+  for (let prop in carro) {
+    propriedades += carro[prop] + ' | ';
+  }
+  dados += '<p>' + propriedades + '</p>';
+}
+criaSecao('Loop While For In', dados);
