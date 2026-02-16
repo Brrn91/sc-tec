@@ -15,9 +15,15 @@ function efetuarOperacao() {
       resultado = num1 * num2;
       break;
     case '/':
-      resultado = num1 / num2;
+      if (num2 == 0) {
+        resultado = 'A divisão por zero é inválida!';
+      } else {
+        resultado = num1 / num2;
+      }
       break;
     default:
       resultado = 'Operador inválido!';
   }
+
+  document.getElementById('resultado').innerHTML = 'O resulado é: ' + resultado;
 }
