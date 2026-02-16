@@ -66,3 +66,10 @@ for (let carro of carros2) {
   dados += '<p>' + propriedades + '</p>';
 }
 criaSecao('Loop While For In', dados);
+
+dados = '';
+
+carros.forEach((carro) => {
+  dados += '<p>' + carro + '</p>';
+});
+criaSecao('Loop ForEach', dados);
