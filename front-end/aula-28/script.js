@@ -18,9 +18,9 @@ function validarFormulario() {
     return false;
   }
 
-  const emailPatern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-  if (emailPatern.toLocaleString(email)) {
+  if (!emailPattern.test(email)) {
     alert('Por favor, insira um e-mail válido!');
     return false;
   }
