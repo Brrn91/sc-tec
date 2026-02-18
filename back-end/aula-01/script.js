@@ -1,9 +1,18 @@
-class Moto {
+class Veiculo {
   constructor(fabricante, modelo, ano, tipo, qtdPortas) {
     this.fabricante = fabricante; // Propriedade da Classe
     this.modelo = modelo; // Propriedade da Classe
     this.ano = ano; // Propriedade da Classe
+    this.tipo = tipo; // Propriedade da Classe
+    this.qtdPortas = qtdPortas; // Propriedade da Classe
+};
+
+class Moto extends Veiculo {
+constructor(fabricante, modelo, ano) {
+
+}
   }
+  
   mostrarDadosMoto() {
     console.log(`${this.fabricante} ${this.modelo}, ${this.ano}`);
   }
@@ -22,8 +31,7 @@ class Carro {
     this.fabricante = fabricante; // Propriedade da Classe
     this.modelo = modelo; // Propriedade da Classe
     this.ano = ano; // Propriedade da Classe
-    this.tipo = tipo; // Propriedade da Classe
-    this.qtdPortas = qtdPortas; // Propriedade da Classe
+
   }
   mostrarDadosCarro() {
     console.log(
