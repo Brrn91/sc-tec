@@ -1,3 +1,22 @@
+class Moto {
+  constructor(fabricante, modelo, ano, tipo, qtdPortas) {
+    this.fabricante = fabricante; // Propriedade da Classe
+    this.modelo = modelo; // Propriedade da Classe
+    this.ano = ano; // Propriedade da Classe
+  }
+  mostrarDadosMoto() {
+    console.log(`${this.fabricante} ${this.modelo}, ${this.ano}`);
+  }
+
+  mostrarModelo() {
+    console.log(`O modelo da moto é ${this.modelo}`);
+  }
+
+  acelerar() {
+    console.log('Acelerando a moto...');
+  }
+}
+
 class Carro {
   constructor(fabricante, modelo, ano, tipo, qtdPortas) {
     this.fabricante = fabricante; // Propriedade da Classe
@@ -22,7 +41,7 @@ class Carro {
 }
 
 const meuCarro = new Carro('Ford', 'Ka', '2008', 'Hatch', '4');
+const minhaMoto = new Moto('Honda', 'Africa Twin', '2026');
 meuCarro.mostrarDadosCarro();
-meuCarro.mostrarModelo();
-meuCarro.acelerar();
+minhaMoto.mostrarDadosMoto();
 
