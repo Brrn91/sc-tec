@@ -26,10 +26,15 @@ function buscarDadosdoServidor() {
 });
 }
 
-buscarDadosdoServidor().then((mensagem) => {
-  console.log(mensagem);
-}).catch((erro) => {
-  console.error(erro);
-});
+const minhaFuncaoAssincrona = async () => {
+  try {
+    const resultado = await buscarDadosdoServidor();
+    console.log(resultado);
+  }
+  catch(erro) {
+    console.error(erro);
+  }
+}
+  minhaFuncaoAssincrona();
 
 console.log('Final da execução!');
