@@ -23,13 +23,16 @@ class Veiculo {
 }
 
 class Moto extends Veiculo {
-  constructor(fabricante, modelo, ano) {
+  constructor(fabricante, modelo, ano, cilindradas) {
     // Chama o construtor da classe Veiculo
     super(fabricante, modelo, ano, 'Moto', 0);
+    this.cilindradas = cilindradas;
   }
 
-  mostrarModelo() {
-    console.log(`O modelo da moto é ${this.modelo}`);
+  mostrarDadosDoVeiculo() {
+    console.log(
+      `${this.fabricante} ${this.modelo}, ${this.ano}, ${this.cilindradas} cilindradas.`
+    );
   }
 
   acelerar() {
@@ -42,8 +45,10 @@ class Carro extends Veiculo {
     super(fabricante, modelo, ano, tipo, qtdPortas);
   }
 
-  mostrarModelo() {
-    console.log(`O modelo do carro é ${this.modelo}`);
+  mostrarDadosDoVeiculo() {
+    console.log(
+      `${this.fabricante} ${this.modelo}, ${this.ano}, (${this.tipo}), ${this.qtdPortas} portas`
+    );
   }
 
   acelerar() {
@@ -52,7 +57,7 @@ class Carro extends Veiculo {
 }
 
 const meuCarro = new Carro('Chevrolett', 'Corsa', '1997', 'Hatch', '2');
-const minhaMoto = new Moto('Honda', 'Africa Twin', '2026');
+const minhaMoto = new Moto('Honda', 'Africa Twin', '2026', '300');
 
 meuCarro.mostrarDadosDoVeiculo();
 minhaMoto.mostrarDadosDoVeiculo();
