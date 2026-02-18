@@ -47,7 +47,7 @@ class Carro extends Veiculo {
   }
 }
 
-const meuCarro = new Carro('Ford', 'Ka', '2008', 'Hatch', '4');
+const meuCarro = new Carro('Chevrolett', 'Corsa', '1997', 'Hatch', '2');
 const minhaMoto = new Moto('Honda', 'Africa Twin', '2026');
 
 meuCarro.mostrarDadosCarro();
