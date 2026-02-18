@@ -26,7 +26,6 @@ Aqui registro meu progresso, aprendizados e experiências adquiridas ao longo da
 - Fundamentos de programação
 - Lógica de programação
 - Exercícios práticos
-- Pequenos projetos
 - Introdução a diferentes áreas da tecnologia
 - Boas práticas de organização de código
 
