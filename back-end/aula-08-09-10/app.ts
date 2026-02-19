@@ -7,6 +7,6 @@ app.use(clientRouter);
 app.set('view engine', 'pug');
 app.set('views', './views')
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log('Servidor criado...')
 });
