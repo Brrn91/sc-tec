@@ -7,11 +7,15 @@
   "type": "module",
   "main": "app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx ts-node-dev -r doteenv/confg app.ts"
   },
   "dependencies": {
+    "dotenv-safe": "^9.1.0",
     "express": "^5.2.1",
+    "mysql2": "^3.17.3",
     "pug": "^3.0.3",
+    "sequelize": "^6.37.7",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
