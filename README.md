@@ -47,4 +47,3 @@ Aqui documento minha evolução, práticas realizadas e conteúdos estudados ao 
 Estou sempre buscando evoluir minhas habilidades e aplicar o conhecimento em situações reais.*
 
 ---
-
